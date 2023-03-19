@@ -3,6 +3,8 @@
 (require '[babashka.fs :as fs]
          '[babashka.tasks :refer [shell]])
 
+(fs/create-dirs "gh-pages")
+
 (fs/copy "resources/public/index.html" "gh-pages"
          {:replace-existing true})
 
@@ -68,8 +70,8 @@
       (fs/glob js-source-dir "scittle*.js"))
 
 (def with-gh-pages (partial shell {:dir "gh-pages"}))
-(with-gh-pages "git add .")
-(with-gh-pages "git commit -m 'update build'")
-(with-gh-pages "git push origin gh-pages")
+;; (with-gh-pages "git add .")
+;; (with-gh-pages "git commit -m 'update build'")
+;; (with-gh-pages "git push origin gh-pages")
 
 nil
