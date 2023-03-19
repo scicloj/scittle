@@ -10,6 +10,7 @@ node_modules/
 .DS_Store
 resources/public/js
 .store
+gh-pages/
 /.lsp
 /dist
 /.clj-kondo/.cache
