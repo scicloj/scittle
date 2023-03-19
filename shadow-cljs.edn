@@ -26,7 +26,10 @@
                        :depends-on #{:scittle.reagent
                                      :scittle}}
     :scittle.cljs-ajax {:entries [scittle.cljs-ajax]
-                        :depends-on #{:scittle}}}
+                        :depends-on #{:scittle}}
+    :scittle.mathbox {:entries [scittle.mathbox]
+                      :depends-on #{:scittle
+                                    :scittle.reagent}}}
    :build-hooks [(shadow.cljs.build-report/hook)]
    :output-dir "resources/public/js"
    :devtools   {:repl-pprint true}}}}
