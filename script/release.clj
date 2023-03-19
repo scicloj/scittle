@@ -26,6 +26,9 @@
 (fs/copy "resources/public/codemirror.html" "docs"
          {:replace-existing true})
 
+(fs/copy "resources/public/mathbox.html" "docs"
+         {:replace-existing true})
+
 (def html-source-dir (fs/file "resources" "public" "html"))
 (def html-target-dir (fs/file "docs" "html"))
 (fs/create-dirs html-target-dir)
