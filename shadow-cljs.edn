@@ -29,7 +29,13 @@
                         :depends-on #{:scittle}}
     :scittle.mathbox {:entries [scittle.mathbox]
                       :depends-on #{:scittle
-                                    :scittle.reagent}}}
+                                    :scittle.reagent}}
+    :scittle.emmy {:entries [scittle.emmy]
+                   :depends-on #{:scittle
+                                 :scittle.reagent}}
+    :scittle.tmdjs {:entries [scittle.tmdjs]
+                    :depends-on #{:scittle
+                                  :scittle.reagent}}}
    :build-hooks [(shadow.cljs.build-report/hook)]
    :output-dir "resources/public/js"
    :devtools   {:repl-pprint true}}}}

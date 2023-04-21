@@ -1,6 +1,6 @@
 # Scittle
 
-(Note: This is a fork of the [Scittle](https://github.com/babashka/scittle) library. It adds some modules which are relevant to scientific application.)
+(Note: This is **a form** of the [Scittle](https://github.com/babashka/scittle) library. It adds some modules which are relevant to scientific application: MathBox.cljs, Emmy, tmdjs.)
 
 The [Small Clojure Interpreter](https://github.com/babashka/sci) exposed for usage in script tags.
 
